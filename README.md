@@ -23,7 +23,7 @@ There are two data sets that were utilized for this demo:
 ```
 
 
-   The scheduled_programs table contains the OST programs that the city has collected, and the rpt_program_geographic_distribution table is a reporting table that    contains geographic and category data for each scheduled program.  The query was run and the results were exported to a CSV.
+   The scheduled_programs table contains the OST programs that the city has collected, and the rpt_program_geographic_distribution table is a reporting table that    contains geographic and category data for each scheduled program.  I did a select * to simplify the syntax for the purposes of this demo, but we would never actually do that for a client request because there are so many fields in these tables.  In general we select 5-20 fields of interest in most requests.  The query was run and the results were exported to a CSV.
    
    
 # Transform Process
