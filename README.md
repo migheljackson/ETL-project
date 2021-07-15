@@ -11,7 +11,7 @@ There are two data sets that were utilized for this demo:
 
 1. [Chicago Community Area Community Data Snapshots dataset](https://datahub.cmap.illinois.gov/dataset/community-data-snapshots-raw-data/resource/8c4e096e-c90c-4bef-9cf1-9028d094296e).  This is a dataset released by CMAP in July 2021 that consolidates census data, American Community Survey data, CMAP reporting data and other sources and aggregates it at the Community level for Chicago.  This was particularly useful because the City of Chicago uses Community as one of the key [geographic groupings of the data that they collect through our platform](https://www.mychimyfuture.org/community/back-of-the-yards).  This set was available as a csv.
 
-2. Platform Data.  We have a MySQL database that we use to run queries of specific data when necessary.  Our database is a mixture of a production replica and a few reporting tables that join data that our researchers use fairly regularly.  
+2. Platform Data.  We have a MySQL database that we use to run queries of specific data when necessary.  Our database is a mixture of a production replica and a few reporting tables that join data that our researchers use fairly regularly. To generate the data that I used here, I ran the following SQL query: 
 ```sql
    select *
    from scheduled_programs as sp
